@@ -1,0 +1,21 @@
+img.logo {
+    width: 200px;
+    height: auto;
+    border-radius:40px
+}
+
+.mainColor {
+    background-color: #19A0BE;
+}
+
+a.mainColor {
+    color: #19A0BE;
+}
+
+a.linkColor {
+    color: white;
+}
+
+.backgroundColor {
+    background-color: white;
+}
