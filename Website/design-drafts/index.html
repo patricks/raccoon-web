@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raccoon — Design directions</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+    :root { --ink:#17202b; --muted:#657180; --line:#dce4e8; --blue:#0b9dbb; --cream:#f7f8f5; }
+    * { box-sizing:border-box; } body { margin:0; background:var(--cream); color:var(--ink); font-family:Manrope,system-ui,sans-serif; }
+    main { width:min(1120px, calc(100% - 40px)); margin:0 auto; padding:76px 0 60px; }
+    .eyebrow { color:var(--blue); font:500 11px/1.2 'DM Mono',monospace; letter-spacing:.13em; text-transform:uppercase; }
+    h1 { max-width:680px; margin:18px 0 14px; font-size:clamp(38px,6vw,74px); line-height:1.02; letter-spacing:-.06em; }
+    .intro { max-width:630px; color:var(--muted); font-size:17px; line-height:1.65; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:54px; }
+    a { color:inherit; text-decoration:none; } .card { min-height:330px; display:flex; flex-direction:column; border:1px solid var(--line); border-radius:20px; overflow:hidden; background:white; transition:transform .2s ease, box-shadow .2s ease; }
+    .card:hover { transform:translateY(-5px); box-shadow:0 18px 35px #1d39451a; } .visual { position:relative; height:190px; overflow:hidden; } .label { margin-top:auto; padding:24px; } .number { color:var(--blue); font:500 11px 'DM Mono',monospace; } h2 { margin:10px 0 8px; font-size:20px; letter-spacing:-.04em; } .label p { margin:0; color:var(--muted); font-size:14px; line-height:1.5; }
+    .one { background:linear-gradient(135deg,#effffd,#e5f3f8 55%,#cfecda); } .one:before { content:''; position:absolute; width:210px; height:210px; border-radius:50%; background:#00a9c0; right:18%; top:25px; box-shadow:0 0 0 20px #ffffff70; } .one:after { content:'R'; position:absolute; right:calc(18% + 55px); top:65px; font-size:62px; font-weight:800; color:#fff; }
+    .two { background:#efede8; } .two:before { content:'GEOCACHING\A COMPANION'; white-space:pre; position:absolute; left:21px; bottom:18px; font-size:26px; line-height:.92; letter-spacing:-.08em; font-weight:800; } .two:after { content:''; position:absolute; width:90px; height:90px; background:#ff6433; border-radius:50%; top:30px; right:30px; }
+    .three { background:#101827; } .three:before { content:''; position:absolute; inset:0; background:radial-gradient(circle at 70% 37%,#22d3b466 0 3%,transparent 4%),radial-gradient(circle at 35% 67%,#2ba7d266 0 2%,transparent 3%),linear-gradient(130deg,transparent 47%,#4ce0c133 48% 49%,transparent 50%); background-size:150px 150px,110px 110px,100% 100%; } .three:after { content:'RACCOON'; position:absolute; left:20px; top:22px; color:#effffb; letter-spacing:.2em; font:500 13px 'DM Mono',monospace; }
+    footer { margin-top:50px; color:var(--muted); font-size:13px; }
+    @media (max-width:720px) { main { padding-top:46px; } .grid { grid-template-columns:1fr; margin-top:38px; } .card { min-height:260px; } .visual { height:145px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Raccoon · iOS app · design study</div>
+    <h1>Three fresh directions for the Raccoon landing page.</h1>
+    <p class="intro">Each draft keeps the current page’s straightforward purpose — introduce Raccoon and lead visitors to the App Store — while giving the product a more distinctive, current visual character.</p>
+    <section class="grid" aria-label="Design directions">
+      <a class="card" href="calm/index.html"><div class="visual one"></div><div class="label"><span class="number">01 / CALM</span><h2>Clear &amp; friendly</h2><p>Soft gradients, generous space and a familiar product feel.</p></div></a>
+      <a class="card" href="editorial/index.html"><div class="visual two"></div><div class="label"><span class="number">02 / EDITORIAL</span><h2>Bold &amp; playful</h2><p>A confident typographic system with a warm outdoor cue.</p></div></a>
+      <a class="card" href="night/index.html"><div class="visual three"></div><div class="label"><span class="number">03 / NIGHT</span><h2>Technical &amp; focused</h2><p>Dark-mode atmosphere for a tool-forward positioning.</p></div></a>
+    </section>
+    <footer>Concept drafts only — all app claims are intentionally kept to the existing site content.</footer>
+  </main>
+</body>
+</html>
